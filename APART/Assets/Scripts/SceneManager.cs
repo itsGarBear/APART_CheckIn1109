@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.SceneManagement;
 
 public class SceneManager : MonoBehaviour
@@ -17,7 +18,7 @@ public class SceneManager : MonoBehaviour
 
     public void Exit()
     {
-        //Application.Quit();
-        UnityEditor.EditorApplication.ExitPlaymode();
+        Application.Quit();
+        //UnityEditor.EditorApplication.ExitPlaymode();
     }
 }
